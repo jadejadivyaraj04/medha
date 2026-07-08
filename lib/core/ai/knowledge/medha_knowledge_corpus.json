@@ -1,0 +1,401 @@
+{
+  "version": "1.0.0",
+  "interactions": [
+    {
+      "id": "int_paracetamol_warfarin",
+      "pair": ["paracetamol", "warfarin"],
+      "aliases": {
+        "paracetamol": ["crocin", "dolo", "calpol", "acetaminophen", "pacimol"],
+        "warfarin": ["warf", "coumadin"]
+      },
+      "severity": "major",
+      "message": "Paracetamol (Crocin/Dolo) can increase warfarin's blood-thinning effect and raise bleeding risk.",
+      "recommendation": "Do not combine without your doctor's advice. Watch for unusual bruising or bleeding.",
+      "source": "Medha on-device guide"
+    },
+    {
+      "id": "int_aspirin_warfarin",
+      "pair": ["aspirin", "warfarin"],
+      "aliases": {
+        "aspirin": ["ecosprin", "disprin", "aspirin"],
+        "warfarin": ["warf", "coumadin"]
+      },
+      "severity": "contraindicated",
+      "message": "Aspirin (Ecosprin) with warfarin greatly increases bleeding risk.",
+      "recommendation": "This combination is usually avoided. Call your doctor immediately.",
+      "source": "Medha on-device guide"
+    },
+    {
+      "id": "int_aspirin_clopidogrel",
+      "pair": ["aspirin", "clopidogrel"],
+      "aliases": {
+        "aspirin": ["ecosprin", "disprin"],
+        "clopidogrel": ["clopitab", "plavix", "clopivas"]
+      },
+      "severity": "major",
+      "message": "Aspirin with clopidogrel raises bleeding risk — sometimes prescribed together after a heart stent, but only under strict doctor supervision.",
+      "recommendation": "Confirm with your cardiologist before taking both.",
+      "source": "Medha on-device guide"
+    },
+    {
+      "id": "int_pantoprazole_methotrexate",
+      "pair": ["pantoprazole", "methotrexate"],
+      "aliases": {
+        "pantoprazole": ["pan-d", "pan d", "pantocid", "pantop"],
+        "methotrexate": ["mtx", "folitrax"]
+      },
+      "severity": "moderate",
+      "message": "Pantoprazole (Pan-D) may reduce methotrexate clearance and increase side effects.",
+      "recommendation": "Tell your doctor if you take both. They may adjust timing or dose.",
+      "source": "Medha on-device guide"
+    },
+    {
+      "id": "int_pantoprazole_clopidogrel",
+      "pair": ["pantoprazole", "clopidogrel"],
+      "aliases": {
+        "pantoprazole": ["pan-d", "pantocid"],
+        "clopidogrel": ["clopitab", "plavix"]
+      },
+      "severity": "moderate",
+      "message": "Some PPIs like pantoprazole may slightly reduce clopidogrel's anti-clotting effect.",
+      "recommendation": "Ask your doctor if you need both — do not stop either medicine on your own.",
+      "source": "Medha on-device guide"
+    },
+    {
+      "id": "int_telmisartan_potassium",
+      "pair": ["telmisartan", "potassium supplements"],
+      "aliases": {
+        "telmisartan": ["telma", "telsartan", "telvas"],
+        "potassium supplements": ["potassium", "kcl", "potklor"]
+      },
+      "severity": "major",
+      "message": "Telmisartan (Telma) with potassium supplements may cause dangerously high potassium.",
+      "recommendation": "Avoid potassium supplements unless prescribed. Call your doctor if you feel weak or have an irregular heartbeat.",
+      "source": "Medha on-device guide"
+    },
+    {
+      "id": "int_losartan_potassium",
+      "pair": ["losartan", "potassium supplements"],
+      "aliases": {
+        "losartan": ["losar", "losacar", "repace"],
+        "potassium supplements": ["potassium", "kcl"]
+      },
+      "severity": "major",
+      "message": "Losartan with potassium supplements can raise potassium to unsafe levels.",
+      "recommendation": "Avoid extra potassium unless your doctor approves.",
+      "source": "Medha on-device guide"
+    },
+    {
+      "id": "int_metformin_alcohol",
+      "pair": ["metformin", "alcohol"],
+      "aliases": {
+        "metformin": ["glycomet", "gluformin", "obimet"],
+        "alcohol": ["alcohol", "wine", "beer"]
+      },
+      "severity": "moderate",
+      "message": "Alcohol with metformin increases the risk of low blood sugar and lactic acidosis.",
+      "recommendation": "Limit alcohol and discuss safe limits with your doctor.",
+      "source": "Medha on-device guide"
+    },
+    {
+      "id": "int_metformin_contrast",
+      "pair": ["metformin", "iodinated contrast dye"],
+      "aliases": {
+        "metformin": ["glycomet", "gluformin"],
+        "iodinated contrast dye": ["contrast dye", "ct contrast", "angiography dye"]
+      },
+      "severity": "major",
+      "message": "Metformin may need to be paused around CT/angiography contrast dye to protect the kidneys.",
+      "recommendation": "Tell the hospital team you take metformin before any scan with contrast.",
+      "source": "Medha on-device guide"
+    },
+    {
+      "id": "int_amlodipine_simvastatin",
+      "pair": ["amlodipine", "simvastatin"],
+      "aliases": {
+        "amlodipine": ["amlong", "amlodac", "amlopres"],
+        "simvastatin": ["simvastatin", "simvotin"]
+      },
+      "severity": "moderate",
+      "message": "Amlodipine can raise simvastatin levels and increase muscle pain risk.",
+      "recommendation": "Report unexplained muscle pain to your doctor.",
+      "source": "Medha on-device guide"
+    },
+    {
+      "id": "int_atorvastatin_gemfibrozil",
+      "pair": ["atorvastatin", "gemfibrozil"],
+      "aliases": {
+        "atorvastatin": ["atorva", "lipitor", "storvas"],
+        "gemfibrozil": ["gemfibrozil", "lopid"]
+      },
+      "severity": "major",
+      "message": "Atorvastatin with gemfibrozil raises the risk of serious muscle damage (rhabdomyolysis).",
+      "recommendation": "This combination is usually avoided — call your doctor.",
+      "source": "Medha on-device guide"
+    },
+    {
+      "id": "int_ibuprofen_aspirin",
+      "pair": ["ibuprofen", "aspirin"],
+      "aliases": {
+        "ibuprofen": ["brufen", "ibugesic"],
+        "aspirin": ["ecosprin", "disprin"]
+      },
+      "severity": "moderate",
+      "message": "Ibuprofen may reduce aspirin's heart-protective effect and add stomach bleeding risk.",
+      "recommendation": "Ask your doctor before combining painkillers.",
+      "source": "Medha on-device guide"
+    },
+    {
+      "id": "int_glimepiride_alcohol",
+      "pair": ["glimepiride", "alcohol"],
+      "aliases": {
+        "glimepiride": ["amaryl", "glimisave", "glimepiride"],
+        "alcohol": ["alcohol"]
+      },
+      "severity": "moderate",
+      "message": "Alcohol with glimepiride can cause dangerous low blood sugar.",
+      "recommendation": "Avoid drinking on an empty stomach while on this medicine.",
+      "source": "Medha on-device guide"
+    },
+    {
+      "id": "int_levothyroxine_calcium",
+      "pair": ["levothyroxine", "calcium supplements"],
+      "aliases": {
+        "levothyroxine": ["thyronorm", "eltroxin", "thyrox"],
+        "calcium supplements": ["calcium", "shelcal", "calcium carbonate"]
+      },
+      "severity": "moderate",
+      "message": "Calcium can block levothyroxine absorption if taken together.",
+      "recommendation": "Take thyroid medicine on an empty stomach and calcium at least 4 hours apart.",
+      "source": "Medha on-device guide"
+    },
+    {
+      "id": "int_amlodipine_telmisartan",
+      "pair": ["amlodipine", "telmisartan"],
+      "aliases": {
+        "amlodipine": ["amlong", "amlodac"],
+        "telmisartan": ["telma", "telsartan"]
+      },
+      "severity": "minor",
+      "message": "Amlodipine and telmisartan are often prescribed together for blood pressure — usually safe under doctor supervision.",
+      "recommendation": "Watch for dizziness or swelling of feet. Do not stop without your doctor.",
+      "source": "Medha on-device guide"
+    }
+  ],
+  "food_rules": [
+    {
+      "id": "food_paracetamol_after",
+      "medicine": "paracetamol",
+      "aliases": ["crocin", "dolo", "calpol", "acetaminophen"],
+      "rule": "after_food",
+      "severity": "minor",
+      "message": "Take paracetamol (Crocin) after food if it upsets your stomach.",
+      "source": "Medha on-device guide"
+    },
+    {
+      "id": "food_metformin_after",
+      "medicine": "metformin",
+      "aliases": ["glycomet", "gluformin", "obimet"],
+      "rule": "after_food",
+      "severity": "minor",
+      "message": "Take metformin after meals to reduce stomach upset and diarrhoea.",
+      "source": "Medha on-device guide"
+    },
+    {
+      "id": "food_pantoprazole_before",
+      "medicine": "pantoprazole",
+      "aliases": ["pan-d", "pantocid", "pantop"],
+      "rule": "before_food",
+      "severity": "minor",
+      "message": "Take pantoprazole (Pan-D) about 30 minutes before breakfast for best effect.",
+      "source": "Medha on-device guide"
+    },
+    {
+      "id": "food_atorvastatin_night",
+      "medicine": "atorvastatin",
+      "aliases": ["atorva", "storvas", "lipitor"],
+      "rule": "evening",
+      "severity": "minor",
+      "message": "Atorvastatin is often taken in the evening when cholesterol production is higher.",
+      "source": "Medha on-device guide"
+    },
+    {
+      "id": "food_levothyroxine_empty",
+      "medicine": "levothyroxine",
+      "aliases": ["thyronorm", "eltroxin", "thyrox"],
+      "rule": "empty_stomach",
+      "severity": "moderate",
+      "message": "Take levothyroxine on an empty stomach with water — wait 30–60 minutes before food or tea.",
+      "source": "Medha on-device guide"
+    },
+    {
+      "id": "food_aspirin_after",
+      "medicine": "aspirin",
+      "aliases": ["ecosprin", "disprin"],
+      "rule": "after_food",
+      "severity": "minor",
+      "message": "Take low-dose aspirin after food if it upsets your stomach.",
+      "source": "Medha on-device guide"
+    },
+    {
+      "id": "food_telmisartan_any",
+      "medicine": "telmisartan",
+      "aliases": ["telma", "telsartan"],
+      "rule": "any_time",
+      "severity": "minor",
+      "message": "Telmisartan (Telma) can be taken with or without food at the same time each day.",
+      "source": "Medha on-device guide"
+    },
+    {
+      "id": "food_amlodipine_any",
+      "medicine": "amlodipine",
+      "aliases": ["amlong", "amlodac"],
+      "rule": "any_time",
+      "severity": "minor",
+      "message": "Amlodipine can be taken with or without food.",
+      "source": "Medha on-device guide"
+    },
+    {
+      "id": "food_glimepiride_before",
+      "medicine": "glimepiride",
+      "aliases": ["amaryl", "glimisave"],
+      "rule": "before_food",
+      "severity": "moderate",
+      "message": "Take glimepiride shortly before meals to avoid low blood sugar.",
+      "source": "Medha on-device guide"
+    },
+    {
+      "id": "food_doxycycline_no_dairy",
+      "medicine": "doxycycline",
+      "aliases": ["doxy", "doxylab", "doxt"],
+      "rule": "avoid_dairy",
+      "severity": "moderate",
+      "message": "Do not take with milk, curd, or calcium-rich foods — they reduce absorption.",
+      "source": "Medha on-device guide"
+    }
+  ],
+  "side_effects": [
+    {
+      "medicine": "Paracetamol (Crocin)",
+      "aliases": ["crocin", "paracetamol", "dolo", "calpol", "acetaminophen"],
+      "effects": [
+        "Nausea or stomach upset in some people",
+        "Liver harm if taken above the prescribed dose",
+        "Rare skin rash or allergic reaction"
+      ],
+      "source": "Medha on-device guide"
+    },
+    {
+      "medicine": "Pantoprazole (Pan-D)",
+      "aliases": ["pan-d", "pantoprazole", "pantocid"],
+      "effects": [
+        "Headache or dizziness",
+        "Stomach pain or diarrhoea",
+        "Long-term use may affect vitamin B12 absorption"
+      ],
+      "source": "Medha on-device guide"
+    },
+    {
+      "medicine": "Telmisartan (Telma)",
+      "aliases": ["telma", "telmisartan", "telsartan"],
+      "effects": [
+        "Dizziness, especially when standing up quickly",
+        "Dry cough in some patients",
+        "Rare swelling of face or lips"
+      ],
+      "source": "Medha on-device guide"
+    },
+    {
+      "medicine": "Metformin",
+      "aliases": ["metformin", "glycomet", "gluformin"],
+      "effects": [
+        "Nausea, bloating, or loose stools when starting",
+        "Metallic taste in mouth",
+        "Rare lactic acidosis — seek help for severe weakness or breathing trouble"
+      ],
+      "source": "Medha on-device guide"
+    },
+    {
+      "medicine": "Amlodipine",
+      "aliases": ["amlodipine", "amlong", "amlodac"],
+      "effects": [
+        "Ankle or leg swelling",
+        "Flushing or headache",
+        "Dizziness"
+      ],
+      "source": "Medha on-device guide"
+    },
+    {
+      "medicine": "Atorvastatin",
+      "aliases": ["atorvastatin", "atorva", "storvas"],
+      "effects": [
+        "Muscle aches or weakness — report to doctor",
+        "Stomach upset",
+        "Rare liver enzyme changes"
+      ],
+      "source": "Medha on-device guide"
+    },
+    {
+      "medicine": "Aspirin (Ecosprin)",
+      "aliases": ["aspirin", "ecosprin", "disprin"],
+      "effects": [
+        "Stomach irritation or heartburn",
+        "Increased bruising",
+        "Ringing in ears at high doses"
+      ],
+      "source": "Medha on-device guide"
+    }
+  ],
+  "generic_alternatives": [
+    {
+      "medicine": "Paracetamol",
+      "aliases": ["crocin", "dolo", "calpol", "pacimol", "acetaminophen"],
+      "generic_name": "Paracetamol",
+      "alternatives": [
+        {"name": "Dolo 650", "note": "Higher strength paracetamol — confirm dose with doctor"},
+        {"name": "Calpol", "note": "Common syrup form for children"}
+      ],
+      "source": "Medha on-device guide"
+    },
+    {
+      "medicine": "Pantoprazole",
+      "aliases": ["pan-d", "pan d", "pantocid", "pantop"],
+      "generic_name": "Pantoprazole",
+      "alternatives": [
+        {"name": "Pantocid 40", "note": "Same PPI class — only switch if doctor agrees"},
+        {"name": "Rabeprazole (Razo)", "note": "Different PPI — not interchangeable without doctor advice"}
+      ],
+      "source": "Medha on-device guide"
+    },
+    {
+      "medicine": "Telmisartan",
+      "aliases": ["telma", "telsartan", "telvas"],
+      "generic_name": "Telmisartan",
+      "alternatives": [
+        {"name": "Telvas 40", "note": "Same ARB — confirm brand with pharmacist"},
+        {"name": "Losartan (Losar)", "note": "Different ARB class — doctor must prescribe"}
+      ],
+      "source": "Medha on-device guide"
+    },
+    {
+      "medicine": "Metformin",
+      "aliases": ["metformin", "glycomet", "gluformin"],
+      "generic_name": "Metformin",
+      "alternatives": [
+        {"name": "Glycomet 500", "note": "Common metformin brand in India"},
+        {"name": "Gluformin", "note": "Extended-release option — not same as plain metformin"}
+      ],
+      "source": "Medha on-device guide"
+    },
+    {
+      "medicine": "Clopidogrel",
+      "aliases": ["clopitab", "plavix", "clopivas"],
+      "generic_name": "Clopidogrel",
+      "alternatives": [
+        {"name": "Clopivas 75", "note": "Same anti-platelet — do not switch without cardiologist"},
+        {"name": "Aspirin (Ecosprin)", "note": "Different drug — never substitute on your own"}
+      ],
+      "source": "Medha on-device guide"
+    }
+  ]
+}

@@ -1,0 +1,91 @@
+{
+  "interactions": [
+    {
+      "id": "int_crocin_warfarin",
+      "drugs": ["crocin", "paracetamol", "acetaminophen", "warfarin"],
+      "pair": ["paracetamol", "warfarin"],
+      "severity": "major",
+      "description": "Paracetamol (Crocin) may increase the blood-thinning effect of warfarin and raise bleeding risk.",
+      "recommendation": "Do not combine without your doctor's advice. Watch for unusual bruising or bleeding.",
+      "source": "On-device medicine guide"
+    },
+    {
+      "id": "int_pand_methotrexate",
+      "drugs": ["pan-d", "pan d", "pantoprazole", "methotrexate"],
+      "pair": ["pantoprazole", "methotrexate"],
+      "severity": "moderate",
+      "description": "Pantoprazole (Pan-D) can reduce methotrexate clearance and increase side effects.",
+      "recommendation": "Tell your doctor if you take both. They may adjust timing or dose.",
+      "source": "On-device medicine guide"
+    },
+    {
+      "id": "int_telma_potassium",
+      "drugs": ["telma", "telmisartan", "potassium", "kcl"],
+      "pair": ["telmisartan", "potassium supplements"],
+      "severity": "major",
+      "description": "Telmisartan (Telma) with potassium supplements may cause dangerously high potassium levels.",
+      "recommendation": "Avoid potassium supplements unless prescribed. Call your doctor if you feel weak or have irregular heartbeat.",
+      "source": "On-device medicine guide"
+    },
+    {
+      "id": "int_metformin_alcohol",
+      "drugs": ["metformin", "alcohol"],
+      "pair": ["metformin", "alcohol"],
+      "severity": "moderate",
+      "description": "Alcohol with metformin increases the risk of low blood sugar and lactic acidosis.",
+      "recommendation": "Limit alcohol and discuss safe limits with your doctor.",
+      "source": "On-device medicine guide"
+    },
+    {
+      "id": "int_aspirin_warfarin",
+      "drugs": ["aspirin", "ecosprin", "warfarin"],
+      "pair": ["aspirin", "warfarin"],
+      "severity": "contraindicated",
+      "description": "Aspirin with warfarin greatly increases bleeding risk.",
+      "recommendation": "This combination is usually avoided. Call your doctor immediately.",
+      "source": "On-device medicine guide"
+    }
+  ],
+  "side_effects": [
+    {
+      "medicine": "Crocin 500",
+      "aliases": ["crocin", "paracetamol", "acetaminophen"],
+      "effects": [
+        "Nausea or stomach upset in some people",
+        "Liver harm if taken above the prescribed dose",
+        "Rare skin rash or allergic reaction"
+      ],
+      "source": "On-device medicine guide"
+    },
+    {
+      "medicine": "Pan-D 40",
+      "aliases": ["pan-d", "pan d", "pantoprazole"],
+      "effects": [
+        "Headache or dizziness",
+        "Stomach pain or diarrhoea",
+        "Long-term use may affect vitamin B12 absorption"
+      ],
+      "source": "On-device medicine guide"
+    },
+    {
+      "medicine": "Telma 40",
+      "aliases": ["telma", "telmisartan"],
+      "effects": [
+        "Dizziness, especially when standing up quickly",
+        "Dry cough in some patients",
+        "Rare swelling of face or lips"
+      ],
+      "source": "On-device medicine guide"
+    },
+    {
+      "medicine": "Metformin 500",
+      "aliases": ["metformin", "glycomet"],
+      "effects": [
+        "Nausea, bloating, or loose stools when starting",
+        "Metallic taste in mouth",
+        "Rare lactic acidosis — seek help for severe weakness or breathing trouble"
+      ],
+      "source": "On-device medicine guide"
+    }
+  ]
+}
